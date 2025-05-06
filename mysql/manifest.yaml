@@ -31,7 +31,7 @@ kind: Service
 metadata:
   name: mysql
   namespace: expense
-  lables:
+  labels:
     app: mysql
     tier: db
     project: expense
