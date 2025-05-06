@@ -31,10 +31,6 @@ kind: Service
 metadata:
   name: mysql
   namespace: expense
-  labels:
-    app: mysql
-    tier: db
-    project: expense
 spec:
   selector:
     app: mysql
@@ -44,6 +40,6 @@ spec:
   - name: mysql-db-port
     protocol: TCP
     port: 3306
-    targetport: 3306
+    targetPort: 3306
 
 
