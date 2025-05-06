@@ -34,7 +34,7 @@ spec:
       - name: backend
         image: manohar1481/backend:v1
         envFrom:
-        - ConfigMapRef:
+        - configMapRef:
             name: backend
 ---
 apiVersion: v1 
