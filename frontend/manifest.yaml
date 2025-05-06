@@ -13,21 +13,21 @@ metadata:
   namespace: expense
   labels:
     app: frontend
-    tier: api 
+    tier: web 
     project: expense
 spec:
   replicas: 3
   selector:
     matchLabels:
       app: frontend
-      tier: api 
+      tier: web 
       project: expense
   template:
     metadata:
       name: frontend
       labels:
         app: frontend
-        tier: api 
+        tier: web 
         project: expense
     spec:
       containers:
@@ -46,7 +46,7 @@ spec:
   type: LoadBalancer
   selector:
       app: frontend
-      tier: api 
+      tier: web 
       project: expense
   ports:
   - name: frontend-port
