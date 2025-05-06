@@ -44,10 +44,9 @@ metadata:
   namespace: expense
 spec:
   selector:
-    matchLabels:
       app: backend
-        tier: api 
-        project: expense
+      tier: api 
+      project: expense
   ports:
   - name: backend-port
     protocol: TCP
