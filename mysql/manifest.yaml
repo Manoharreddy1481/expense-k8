@@ -29,9 +29,12 @@ spec:
 apiVersion: v1 
 kind: Service
 metadata:
-  app: mysql
-  tier: db
-  project: expense
+  name: mysql
+  namespace: expense
+  lables:
+    app: mysql
+    tier: db
+    project: expense
 spec:
   selector:
     app: mysql
